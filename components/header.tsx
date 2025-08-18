@@ -12,7 +12,7 @@ import {
 import { ModeToggle } from "./mode-toggle";
 import { Menu } from "lucide-react";
 import { Search } from "lucide-react";
-import { navLinks } from "@/data/data";
+import { links } from "@/data";
 
 export default function Header() {
   return (
@@ -32,13 +32,13 @@ export default function Header() {
         </a>
         <nav className="hidden md:block">
           <ul className="flex gap-4">
-            {navLinks.map((navLink, index) => (
+            {links.map((link, index) => (
               <li key={index}>
                 <a
                   className="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
-                  href={navLink.href}
+                  href={link.href}
                 >
-                  {navLink.name}
+                  {link.name}
                 </a>
               </li>
             ))}
@@ -72,9 +72,9 @@ export default function Header() {
               </SheetHeader>
               <nav>
                 <ul className="flex min-h-screen flex-col justify-center gap-6 pl-6">
-                  {navLinks.map((navLink, index) => (
+                  {links.map((link, index) => (
                     <li key={index}>
-                      <a href={navLink.href}>{navLink.name}</a>
+                      <a href={link.href}>{link.name}</a>
                     </li>
                   ))}
                 </ul>

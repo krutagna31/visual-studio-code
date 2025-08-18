@@ -3,7 +3,7 @@
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import { Container } from "@/components/ui/container";
-import { customizations } from "@/data/data";
+import { customizations } from "@/data";
 
 export default function CopilotCustomization() {
   const { theme } = useTheme();
