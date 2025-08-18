@@ -1,5 +1,4 @@
-import { Customization } from "@/types/types";
-import { NavLink } from "@/types/types";
+import { Customization } from "@/types";
 
 export const customizations: Customization[] = [
   {
@@ -29,14 +28,4 @@ export const customizations: Customization[] = [
       dark: "/assets/copilot-customization/instructions-dark.webp",
     },
   },
-];
-
-export const navLinks: NavLink[] = [
-  { name: "Docs", href: "#" },
-  { name: "Updates", href: "#" },
-  { name: "Blog", href: "#" },
-  { name: "API", href: "#" },
-  { name: "Extensions", href: "#" },
-  { name: "FAQ", href: "#" },
-  { name: "GitHub Copilot", href: "#" },
 ];

@@ -1,0 +1,13 @@
+import { Container } from "@/components/ui/container";
+
+interface CardProps {
+  children: React.ReactNode;
+}
+
+export default function Card({ children }: CardProps) {
+  return (
+    <section className="py-12">
+      <Container className="grid md:grid-cols-2">{children}</Container>
+    </section>
+  );
+}
