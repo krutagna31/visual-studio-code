@@ -1,10 +1,13 @@
-import { ModeToggle } from "@/components/mode-toggle";
+import AiFeatures from "@/components/ai-features";
+import CopilotCustomization from "@/components/copilot-customization";
+import Hero from "@/components/hero";
 
 export default function Home() {
   return (
-    <div>
-      <h1>React Shadcn Template</h1>
-      <ModeToggle />
-    </div>
+    <>
+      <Hero />
+      <CopilotCustomization />
+      <AiFeatures />
+    </>
   );
 }
