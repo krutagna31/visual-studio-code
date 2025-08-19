@@ -1,3 +1,2 @@
 export * from "./copilot-customization";
 export * from "./header";
-export * from "./shared";
