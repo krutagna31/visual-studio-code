@@ -1,2 +1,2 @@
 export * from "./customizations";
-export * from "./links";
+export * from "./header";

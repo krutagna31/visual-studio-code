@@ -1,38 +1,38 @@
 "use client";
 
-import { useTheme } from "next-themes";
 import { useState, useRef } from "react";
-import { Container } from "@/components/ui/container";
+import { SectionContainer } from "@/components/layouts/section-container";
+import { ViewContainer } from "@/components/layouts/view-container";
 import { Button } from "./ui/button";
 import { ArrowDownToLine } from "lucide-react";
+import { ThemeVideo } from "@/components/ui/theme-video";
 
-interface Playback {
-  state: "playing" | "paused" | "ended";
-  text: "Pause" | "Play" | "Replay";
-}
+type PlaybackState = "playing" | "paused" | "ended";
+
+const playbackStateToText: Record<PlaybackState, string> = {
+  playing: "Pause",
+  paused: "Play",
+  ended: "Replay",
+};
 
 export default function Hero() {
-  const { theme } = useTheme();
-  console.log(theme);
-  const videoRef = useRef<null | HTMLVideoElement>(null);
-  const [playback, setPlayback] = useState<Playback>({
-    state: "playing",
-    text: "Pause",
-  });
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const [playbackState, setPlaybackState] = useState<PlaybackState>("playing");
 
   function handlePlayingStateChange() {
-    if (playback.state === "playing") {
-      videoRef.current?.pause();
-      setPlayback({ state: "paused", text: "Play" });
-    } else {
+    setPlaybackState((prevPlaybackState) => {
+      if (prevPlaybackState === "playing") {
+        videoRef.current?.pause();
+        return "paused";
+      }
       videoRef.current?.play();
-      setPlayback({ state: "playing", text: "Pause" });
-    }
+      return "playing";
+    });
   }
 
   return (
-    <section className="py-12">
-      <Container className="space-y-6">
+    <SectionContainer>
+      <ViewContainer className="space-y-6">
         <div className="space-y-4">
           <h1 className="text-center text-4xl font-bold md:text-6xl">
             <span className="block">Your code editor.</span>
@@ -67,25 +67,19 @@ export default function Hero() {
         </div>
         <div className="space-y-2">
           <div className="rounded-md bg-[url(/assets/hero/hero-light.webp)] p-4">
-            <video
+            <ThemeVideo
               id="hero-video"
-              key={theme}
               ref={videoRef}
-              autoPlay
-              muted
-              onEnded={() => {
-                setPlayback({ state: "ended", text: "Replay" });
+              src={{
+                light: "/assets/hero/hero-light-lg.webm",
+                dark: "/assets/hero/hero-dark-lg.webm",
               }}
-            >
-              <source
-                src={
-                  theme === "light"
-                    ? "/assets/hero/hero-light-lg.webm"
-                    : "/assets/hero/hero-dark-lg.webm"
-                }
-                type="video/webm"
-              />
-            </video>
+              onEnded={() => {
+                setPlaybackState("ended");
+              }}
+              muted
+              autoPlay
+            />
           </div>
           <div className="flex justify-center">
             <button
@@ -93,12 +87,11 @@ export default function Hero() {
               className="cursor-pointer"
               onClick={handlePlayingStateChange}
             >
-              {playback.text}
+              {playbackStateToText[playbackState]}
             </button>
           </div>
         </div>
-      </Container>
-    </section>
+      </ViewContainer>
+    </SectionContainer>
   );
 }
-
