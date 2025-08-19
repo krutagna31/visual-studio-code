@@ -66,13 +66,13 @@ export default function Hero() {
           </p>
         </div>
         <div className="space-y-2">
-          <div className="rounded-md bg-[url(/assets/hero/hero-light.webp)] p-4">
+          <div className="rounded-md bg-[url(/images/hero/hero-light.webp)] p-4">
             <ThemeVideo
               id="hero-video"
               ref={videoRef}
               src={{
-                light: "/assets/hero/hero-light-lg.webm",
-                dark: "/assets/hero/hero-dark-lg.webm",
+                light: "/videos/hero/hero-light-lg.webm",
+                dark: "/videos/hero/hero-dark-lg.webm",
               }}
               onEnded={() => {
                 setPlaybackState("ended");

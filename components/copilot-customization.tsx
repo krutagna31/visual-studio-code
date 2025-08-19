@@ -1,14 +1,9 @@
-"use client";
-
-import { useTheme } from "next-themes";
-import Image from "next/image";
 import { SectionContainer } from "@/components/layouts/section-container";
 import { ViewContainer } from "@/components/layouts/view-container";
-import { customizations } from "@/data";
+import { customizations } from "@/content";
+import { ThemeImage } from "@/components/ui/theme-image";
 
 export default function CopilotCustomization() {
-  const { theme } = useTheme();
-
   return (
     <SectionContainer className="py-12">
       <ViewContainer className="grid gap-4 md:grid-cols-3">
@@ -23,14 +18,9 @@ export default function CopilotCustomization() {
                 {customization.description}
               </p>
             </div>
-            <Image
-              key={theme}
-              src={
-                theme === "light"
-                  ? customization.image.light
-                  : customization.image.dark
-              }
-              alt={customization.title}
+            <ThemeImage
+              src={customization.image.src}
+              alt={customization.image.alt}
               width="1000"
               height="600"
             />

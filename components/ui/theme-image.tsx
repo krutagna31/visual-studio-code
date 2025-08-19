@@ -1,3 +1,5 @@
+"use client";
+
 import { useTheme } from "next-themes";
 import Image from "next/image";
 
@@ -14,6 +16,7 @@ function ThemeImage({ src, alt, ...props }: ThemeImageProps) {
 
   return (
     <Image
+      key={theme}
       src={theme === "light" ? src.light : src.dark}
       alt={alt}
       {...props}

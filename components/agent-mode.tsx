@@ -15,8 +15,8 @@ export default function AgentMode() {
         </p>
       </div>
       <Image
-        src="/assets/agent-mode/swimlane-chat-dark.webp"
-        alt="VS Code window showing a code editor with projects.tsx, alongside copilot chat panel"
+        src="/images/agent-mode/swimlane-chat-dark.webp"
+        alt="vs code window showing a code editor with projects.tsx, alongside copilot chat panel"
         width="1440"
         height="1024"
       />

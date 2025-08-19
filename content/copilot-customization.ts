@@ -6,8 +6,11 @@ export const customizations: Customization[] = [
     description:
       "Pick the model that works best for your project and team, including GPT 4o and Claude Sonnet.",
     image: {
-      light: "/assets/copilot-customization/choose-model-light.webp",
-      dark: "/assets/copilot-customization/choose-model-dark.webp",
+      src: {
+        light: "/images/copilot-customization/choose-model-light.webp",
+        dark: "/images/copilot-customization/choose-model-dark.webp",
+      },
+      alt: "dropdown menu in github copilot chat displayin ai models",
     },
   },
   {
@@ -15,8 +18,11 @@ export const customizations: Customization[] = [
     description:
       "Copilot locally indexes your codebase to understand what’s relevant and supplements that context to interactions with Copilot.",
     image: {
-      light: "/assets/copilot-customization/multi-file-light.webp",
-      dark: "/assets/copilot-customization/multi-file-dark.webp",
+      src: {
+        light: "/images/copilot-customization/multi-file-light.webp",
+        dark: "/images/copilot-customization/multi-file-dark.webp",
+      },
+      alt: "a vs code chat prompt to add context",
     },
   },
   {
@@ -24,8 +30,11 @@ export const customizations: Customization[] = [
     description:
       "Copilot works the way you do. Customize Copilot's prompts with details about your team's workflows, tools, and projects.",
     image: {
-      light: "/assets/copilot-customization/instructions-light.webp",
-      dark: "/assets/copilot-customization/instructions-dark.webp",
+      src: {
+        light: "/images/copilot-customization/instructions-light.webp",
+        dark: "/images/copilot-customization/instructions-dark.webp",
+      },
+      alt: "a vs code window showing json for copilot instructions",
     },
   },
 ];
