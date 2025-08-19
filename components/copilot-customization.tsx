@@ -2,16 +2,16 @@
 
 import { useTheme } from "next-themes";
 import Image from "next/image";
-import { Container } from "@/components/ui/container";
+import { SectionContainer } from "@/components/layouts/section-container";
+import { ViewContainer } from "@/components/layouts/view-container";
 import { customizations } from "@/data";
 
 export default function CopilotCustomization() {
   const { theme } = useTheme();
-  // key, id, className / src, alt / width , height / style, onClick, onChange
 
   return (
-    <section className="py-12">
-      <Container className="grid gap-4 md:grid-cols-3">
+    <SectionContainer className="py-12">
+      <ViewContainer className="grid gap-4 md:grid-cols-3">
         {customizations.map((customization, index) => (
           <div
             key={index}
@@ -36,7 +36,7 @@ export default function CopilotCustomization() {
             />
           </div>
         ))}
-      </Container>
-    </section>
+      </ViewContainer>
+    </SectionContainer>
   );
 }

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Container } from "@/components/ui/container";
+import { ViewContainer } from "@/components/layouts/view-container";
 import {
   Sheet,
   SheetContent,
@@ -17,7 +17,7 @@ import { links } from "@/data";
 export default function Header() {
   return (
     <header className="py-4">
-      <Container className="flex flex-wrap items-center justify-between">
+      <ViewContainer className="flex flex-wrap items-center justify-between">
         <a className="flex items-center gap-2" href="#">
           <Image
             className="size-7"
@@ -82,7 +82,7 @@ export default function Header() {
             </SheetContent>
           </Sheet>
         </div>
-      </Container>
+      </ViewContainer>
     </header>
   );
 }

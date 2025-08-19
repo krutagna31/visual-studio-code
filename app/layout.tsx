@@ -11,7 +11,7 @@ const josefinSans = Josefin_Sans({
 export const metadata: Metadata = {
   title: "Visual Studio Code",
   description:
-    "A Visual Studio Code interface built with Next.js, Tailwind CSS and Shadcn/UI",
+    "A modern Visual Studio Code interface built with Next.js, Tailwind CSS and Shadcn/UI",
 };
 
 export default function RootLayout({
