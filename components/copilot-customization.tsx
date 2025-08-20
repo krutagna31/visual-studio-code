@@ -14,7 +14,7 @@ function CopilotCustomization() {
           >
             <div className="space-y-2">
               <h2 className="text-xl">{customization.title}</h2>
-              <p className="text-gray-500 dark:text-gray-300">
+              <p className="text-muted-foreground">
                 {customization.description}
               </p>
             </div>

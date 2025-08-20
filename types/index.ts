@@ -1,3 +1,3 @@
-export * from "./copilot-customization";
 export * from "./header";
-export * from "./shared";
+export * from "./copilot-customization";
+export * from "./code-with-extensions";
