@@ -1,7 +1,11 @@
-import { ThemeImage } from "@/types/shared";
-
 export type Customization = {
   title: string;
   description: string;
-  image: ThemeImage;
+  image: {
+    src: {
+      light: string;
+      dark: string;
+    };
+    alt: string;
+  };
 };
