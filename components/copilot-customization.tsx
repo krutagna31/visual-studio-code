@@ -3,7 +3,7 @@ import { ViewContainer } from "@/components/layouts/view-container";
 import { customizations } from "@/content";
 import { ThemeImage } from "@/components/ui/theme-image";
 
-export default function CopilotCustomization() {
+function CopilotCustomization() {
   return (
     <SectionContainer className="py-12">
       <ViewContainer className="grid gap-4 md:grid-cols-3">
@@ -30,3 +30,5 @@ export default function CopilotCustomization() {
     </SectionContainer>
   );
 }
+
+export { CopilotCustomization };

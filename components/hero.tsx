@@ -6,6 +6,7 @@ import { ViewContainer } from "@/components/layouts/view-container";
 import { Button } from "./ui/button";
 import { ArrowDownToLine } from "lucide-react";
 import { ThemeVideo } from "@/components/ui/theme-video";
+import { CustomLink } from "@/components/ui/custom-link";
 
 type PlaybackState = "playing" | "paused" | "ended";
 
@@ -15,7 +16,7 @@ const playbackStateToText: Record<PlaybackState, string> = {
   ended: "Replay",
 };
 
-export default function Hero() {
+function Hero() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [playbackState, setPlaybackState] = useState<PlaybackState>("playing");
 
@@ -52,17 +53,11 @@ export default function Hero() {
             <Button variant="secondary">Get Copilot Free</Button>
           </div>
           <p className="space-x-1 text-center text-sm">
-            <a className="text-sky-500 underline" href="#">
-              Web
-            </a>
+            <CustomLink href="#">Web</CustomLink>
             <span>,</span>
-            <a className="text-sky-500 underline" href="#">
-              Insiders edition
-            </a>
+            <CustomLink href="#">Insiders edition</CustomLink>
             <span>, or</span>
-            <a className="text-sky-500 underline" href="#">
-              other platforms
-            </a>
+            <CustomLink href="#">other platforms</CustomLink>
           </p>
         </div>
         <div className="space-y-2">
@@ -95,3 +90,5 @@ export default function Hero() {
     </SectionContainer>
   );
 }
+
+export { Hero };
