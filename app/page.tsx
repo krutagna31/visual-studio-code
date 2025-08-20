@@ -1,7 +1,8 @@
-import AgentMode from "@/components/agent-mode";
-import AiFeatures from "@/components/ai-features";
-import CopilotCustomization from "@/components/copilot-customization";
-import Hero from "@/components/hero";
+import { Hero } from "@/components/hero";
+import { CopilotCustomization } from "@/components/copilot-customization";
+import { AiFeatures } from "@/components/ai-features";
+import { AgentMode } from "@/components/agent-mode";
+import { NextEditSuggestions } from "@/components/next-edit-suggestions";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <CopilotCustomization />
       <AiFeatures />
       <AgentMode />
+      <NextEditSuggestions />
     </>
   );
 }

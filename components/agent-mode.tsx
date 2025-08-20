@@ -2,7 +2,7 @@ import Card from "@/components/ui/card";
 import { CustomLink } from "@/components/ui/custom-link";
 import { ThemeImage } from "@/components/ui/theme-image";
 
-export default function AgentMode() {
+function AgentMode() {
   return (
     <Card>
       <div className="space-y-4 md:place-self-center">
@@ -28,3 +28,5 @@ export default function AgentMode() {
     </Card>
   );
 }
+
+export { AgentMode };

@@ -2,7 +2,7 @@ import { SectionContainer } from "@/components/layouts/section-container";
 import { ViewContainer } from "@/components/layouts/view-container";
 import { Button } from "./ui/button";
 
-export default function AiFeatures() {
+function AiFeatures() {
   return (
     <SectionContainer>
       <ViewContainer>
@@ -19,3 +19,5 @@ export default function AiFeatures() {
     </SectionContainer>
   );
 }
+
+export { AiFeatures };
