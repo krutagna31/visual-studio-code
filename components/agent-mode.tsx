@@ -1,11 +1,12 @@
 import Card from "@/components/ui/card";
-import Image from "next/image";
+import { CustomLink } from "@/components/ui/custom-link";
+import { ThemeImage } from "@/components/ui/theme-image";
 
 export default function AgentMode() {
   return (
     <Card>
-      <div>
-        <h2>Agent Mode</h2>
+      <div className="space-y-4 md:place-self-center">
+        <h2 className="text-2xl font-bold">Agent Mode</h2>
         <p>
           Tackle complex, multi-step tasks. Agent mode reads your codebase,
           suggests edits across files, runs terminal commands, and responds to
@@ -13,12 +14,16 @@ export default function AgentMode() {
           Further refine agent mode to fit your team&apos;s workflows with VS
           Code extensions and Model Context Protocol (MCP) servers.
         </p>
+        <CustomLink href="#">Build with agent mode</CustomLink>
       </div>
-      <Image
-        src="/images/agent-mode/swimlane-chat-dark.webp"
+      <ThemeImage
+        src={{
+          light: "/images/agent-mode/swimlane-chat-light.webp",
+          dark: "/images/agent-mode/swimlane-chat-dark.webp",
+        }}
         alt="vs code window showing a code editor with projects.tsx, alongside copilot chat panel"
         width="1440"
-        height="1024"
+        height="1080"
       />
     </Card>
   );

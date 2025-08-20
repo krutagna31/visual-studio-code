@@ -7,7 +7,7 @@ interface CardProps {
 export default function Card({ children }: CardProps) {
   return (
     <section className="py-12">
-      <Container className="grid md:grid-cols-2">{children}</Container>
+      <Container className="grid md:grid-cols-[35fr_65fr] gap-2">{children}</Container>
     </section>
   );
 }
