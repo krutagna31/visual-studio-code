@@ -1,10 +1,9 @@
-import { SectionContainer, GridContainer } from "@/components/layouts";
+import { SectionGrid } from "@/components/sections/shared";
 import { CustomLink, ThemeImage } from "@/components/ui";
 
 function NextEditSuggestions() {
   return (
-    <SectionContainer>
-      <GridContainer>
+    <SectionGrid>
         <div className="space-y-4 md:place-self-center">
           <h2 className="text-2xl font-bold">Next edit suggestions</h2>
           <p className="text-muted-foreground">
@@ -26,8 +25,7 @@ function NextEditSuggestions() {
           width="1440"
           height="1080"
         />
-      </GridContainer>
-    </SectionContainer>
+    </SectionGrid>
   );
 }
 

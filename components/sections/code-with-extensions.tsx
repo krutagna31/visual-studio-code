@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { GridContainer, SectionContainer } from "@/components/layouts";
-import { extensions } from "@/content";
+import { SectionGrid } from "@/components/sections/shared";
 import {
   Card,
   CardContent,
@@ -8,11 +7,11 @@ import {
   CardTitle,
   CustomLink,
 } from "@/components/ui";
+import { extensions } from "@/content";
 
 function CodeWithExtensions() {
   return (
-    <SectionContainer>
-      <GridContainer>
+    <SectionGrid>
         <div className="space-y-4 md:place-self-center">
           <h2 className="text-2xl font-bold">Code with extensions</h2>
           <p className="text-muted-foreground">
@@ -35,8 +34,7 @@ function CodeWithExtensions() {
             </Card>
           ))}
         </div>
-      </GridContainer>
-    </SectionContainer>
+    </SectionGrid>
   );
 }
 
