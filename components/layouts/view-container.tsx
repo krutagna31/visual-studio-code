@@ -4,7 +4,7 @@ function ViewContainer({
   children,
   className,
   ...props
-}: React.HTMLAttributes<HTMLDivElement>) {
+}: React.ComponentProps<"div">) {
   return (
     <div className={clsx(className, "mx-auto max-w-7xl px-4")} {...props}>
       {children}
