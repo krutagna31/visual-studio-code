@@ -4,7 +4,7 @@ function SectionContainer({
   children,
   className,
   ...props
-}: React.HTMLAttributes<HTMLElement>) {
+}: React.ComponentProps<"section">) {
   return (
     <section className={clsx(className, "py-12")} {...props}>
       {children}
