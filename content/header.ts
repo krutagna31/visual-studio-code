@@ -1,4 +1,4 @@
-import { Link } from "@/types";
+import type { Link } from "@/types";
 
 export const links: Link[] = [
   { name: "Docs", href: "#" },
