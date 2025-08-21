@@ -8,7 +8,7 @@ function GridContainer({
 }: React.ComponentProps<"div">) {
   return (
     <ViewContainer
-      className={clsx(className, "grid grid-cols-[35fr_75fr] gap-4 lg:gap-8")}
+      className={clsx(className, "grid md:grid-cols-[35fr_75fr] gap-4 lg:gap-8")}
       {...props}
     >
       {children}
