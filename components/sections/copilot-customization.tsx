@@ -5,8 +5,8 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { ThemeImage } from "@/components/ui/theme-image";
+  ThemeImage,
+} from "@/components/ui";
 import { customizations } from "@/content";
 
 function CopilotCustomization() {

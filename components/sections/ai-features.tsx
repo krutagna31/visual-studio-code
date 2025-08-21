@@ -1,5 +1,5 @@
 import { SectionContainer, ViewContainer } from "@/components/layouts";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui";
 
 function AiFeatures() {
   return (

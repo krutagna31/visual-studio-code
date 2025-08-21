@@ -1,13 +1,13 @@
+import Image from "next/image";
 import { GridContainer, SectionContainer } from "@/components/layouts";
+import { extensions } from "@/content";
 import {
   Card,
   CardContent,
   CardDescription,
   CardTitle,
-} from "@/components/ui/card";
-import { CustomLink } from "@/components/ui/custom-link";
-import { extensions } from "@/content";
-import Image from "next/image";
+  CustomLink,
+} from "@/components/ui";
 
 function CodeWithExtensions() {
   return (

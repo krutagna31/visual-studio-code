@@ -2,10 +2,8 @@
 
 import { useState, useRef } from "react";
 import { SectionContainer, ViewContainer } from "@/components/layouts";
-import { Button } from "@/components/ui/button";
+import { Button, CustomLink, ThemeVideo } from "@/components/ui";
 import { ArrowDownToLine } from "lucide-react";
-import { ThemeVideo } from "@/components/ui/theme-video";
-import { CustomLink } from "@/components/ui/custom-link";
 
 type PlaybackState = "playing" | "paused" | "ended";
 
