@@ -1,5 +1,4 @@
-import { SectionContainer } from "@/components/layouts/section-container";
-import { ViewContainer } from "@/components/layouts/view-container";
+import { SectionContainer, ViewContainer } from "@/components/layouts";
 import {
   Card,
   CardContent,

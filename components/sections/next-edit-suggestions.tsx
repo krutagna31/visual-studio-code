@@ -1,7 +1,6 @@
+import { SectionContainer, GridContainer } from "@/components/layouts";
 import { CustomLink } from "@/components/ui/custom-link";
 import { ThemeImage } from "@/components/ui/theme-image";
-import { SectionContainer } from "@/components/layouts";
-import { GridContainer } from "@/components/layouts";
 
 function NextEditSuggestions() {
   return (
