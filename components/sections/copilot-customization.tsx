@@ -1,13 +1,12 @@
-import { SectionContainer } from "@/components/layouts/section-container";
-import { ViewContainer } from "@/components/layouts/view-container";
+import { SectionContainer, ViewContainer } from "@/components/layouts";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { ThemeImage } from "@/components/ui/theme-image";
+  ThemeImage,
+} from "@/components/ui";
 import { customizations } from "@/content";
 
 function CopilotCustomization() {

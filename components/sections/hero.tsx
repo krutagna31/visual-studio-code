@@ -1,12 +1,9 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { SectionContainer } from "@/components/layouts/section-container";
-import { ViewContainer } from "@/components/layouts/view-container";
-import { Button } from "./ui/button";
+import { SectionContainer, ViewContainer } from "@/components/layouts";
+import { Button, CustomLink, ThemeVideo } from "@/components/ui";
 import { ArrowDownToLine } from "lucide-react";
-import { ThemeVideo } from "@/components/ui/theme-video";
-import { CustomLink } from "@/components/ui/custom-link";
 
 type PlaybackState = "playing" | "paused" | "ended";
 

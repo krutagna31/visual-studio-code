@@ -1,6 +1,5 @@
 import { GridContainer, SectionContainer } from "@/components/layouts";
-import { CustomLink } from "@/components/ui/custom-link";
-import { ThemeImage } from "@/components/ui/theme-image";
+import { CustomLink, ThemeImage } from "@/components/ui";
 
 function AgentMode() {
   return (

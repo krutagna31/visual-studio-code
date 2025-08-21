@@ -1,16 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { ViewContainer } from "@/components/layouts/view-container";
+import { ViewContainer } from "@/components/layouts";
 import {
+  Button,
   Sheet,
   SheetContent,
   SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
-import { ModeToggle } from "./mode-toggle";
+} from "@/components/ui";
+import { ModeToggle } from "@/components/mode-toggle";
 import { Menu } from "lucide-react";
 import { links } from "@/content";
 
