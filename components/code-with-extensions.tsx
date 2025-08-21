@@ -1,4 +1,11 @@
 import { GridContainer, SectionContainer } from "@/components/layouts";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { CustomLink } from "@/components/ui/custom-link";
 import { extensions } from "@/content";
 import Image from "next/image";
@@ -18,13 +25,15 @@ function CodeWithExtensions() {
         </div>
         <div className="grid grid-cols-3 gap-4">
           {extensions.map(({ title, description, image }) => (
-            <div className="bg-card" key={title}>
-              <Image src={image.src} alt={image.alt} width="64" height="64" />
-              <div>
-                <h3>{title}</h3>
-                <p>{description}</p>
-              </div>
-            </div>
+            <Card key={title} className="">
+              <CardContent className="flex items-center justify-center gap-4">
+                <Image src={image.src} alt={image.alt} width="64" height="64" />
+                <div className="hidden space-y-2 lg:block">
+                  <CardTitle>{title}</CardTitle>
+                  <CardDescription>{description}</CardDescription>
+                </div>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </GridContainer>
