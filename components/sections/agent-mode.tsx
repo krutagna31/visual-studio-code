@@ -13,7 +13,7 @@ function AgentMode() {
           Further refine agent mode to fit your team&apos;s workflows with VS
           Code extensions and Model Context Protocol (MCP) servers.
         </p>
-        <CustomLink variant="secondary" href="#">
+        <CustomLink href="#">
           Build with agent mode
         </CustomLink>
       </div>

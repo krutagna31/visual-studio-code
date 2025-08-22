@@ -1,8 +1,11 @@
 import {
   AgentMode,
   AiFeatures,
+  CodeAnyLanguage,
+  CodeAnywhere,
   CodeWithExtensions,
   CopilotCustomization,
+  FullyCustomizable,
   Hero,
   NextEditSuggestions,
 } from "@/components/sections";
@@ -16,6 +19,9 @@ export default function Home() {
       <AgentMode />
       <NextEditSuggestions />
       <CodeWithExtensions />
+      <CodeAnyLanguage />
+      <FullyCustomizable />
+      <CodeAnywhere />
     </>
   );
 }

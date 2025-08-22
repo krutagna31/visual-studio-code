@@ -12,7 +12,7 @@ function NextEditSuggestions() {
             recommends what to change — and where — based on the edits
             you&apos;re already making.
           </p>
-          <CustomLink variant="secondary" href="#">
+          <CustomLink href="#">
             Code with AI-powered suggestions
           </CustomLink>
         </div>
