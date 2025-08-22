@@ -28,7 +28,7 @@ function CodeAnywhere() {
           light: "/images/code-anywhere/swimlane-anywhere-light.png",
           dark: "/images/code-anywhere/swimlane-anywhere-dark.png",
         }}
-        alt=""
+        alt="vs-code window showing a button.ts file"
         width="1440"
         height="1080"
       />

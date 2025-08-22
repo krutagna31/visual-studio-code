@@ -22,7 +22,7 @@ function AgentMode() {
           light: "/images/agent-mode/swimlane-chat-light.webp",
           dark: "/images/agent-mode/swimlane-chat-dark.webp",
         }}
-        alt="vs code window showing a code editor with projects.tsx, alongside copilot chat panel"
+        alt="vs code window showing projects.tsx, alongside copilot chat panel"
         width="1440"
         height="1080"
       />
