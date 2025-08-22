@@ -5,8 +5,8 @@ import { cn } from "@/lib/utils";
 const customLinkVariants = cva("underline", {
   variants: {
     variant: {
-      default: "text-black dark:text-white",
-      secondary: "text-sky-500",
+      default: "text-sky-500",
+      secondary: "text-black dark:text-white",
     },
   },
   defaultVariants: {

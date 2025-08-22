@@ -50,9 +50,7 @@ function Hero() {
             <Button variant="secondary">Get Copilot Free</Button>
           </div>
           <p className="space-x-1 text-center text-sm">
-            <CustomLink href="#">Web</CustomLink>,{" "}
-            <CustomLink href="#">Insiders edition</CustomLink> or{" "}
-            <CustomLink href="#">other platforms</CustomLink>
+            <CustomLink href="#" variant="secondary">Web</CustomLink>, <CustomLink href="#" variant="secondary">Insiders edition</CustomLink>or <CustomLink href="#" variant="secondary">other platforms</CustomLink>
           </p>
         </div>
         <div className="space-y-2">
