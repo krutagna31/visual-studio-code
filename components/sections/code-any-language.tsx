@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { SectionGrid } from "@/components/sections/shared";
-import { languages } from "@/content/code-any-language";
+import { languages } from "@/content";
 
 function CodeAnyLanguage() {
   return (

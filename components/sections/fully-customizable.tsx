@@ -31,7 +31,7 @@ function FullyCustomizable() {
           light: "/images/fully-customizable/swimlane-customized-light.png",
           dark: "/images/fully-customizable/swimlane-customized-dark.png",
         }}
-        alt=""
+        alt="vs code window showing various themes"
         width="1440"
         height="1080"
       />

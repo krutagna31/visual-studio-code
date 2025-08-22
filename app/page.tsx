@@ -4,6 +4,7 @@ import {
   CodeAnyLanguage,
   CodeAnywhere,
   CodeWithExtensions,
+  CodeWithFeatures,
   CopilotCustomization,
   FullyCustomizable,
   Hero,
@@ -22,6 +23,7 @@ export default function Home() {
       <CodeAnyLanguage />
       <FullyCustomizable />
       <CodeAnywhere />
+      <CodeWithFeatures />
     </>
   );
 }
