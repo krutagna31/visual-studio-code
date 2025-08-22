@@ -11,7 +11,7 @@ import { customizations } from "@/content";
 
 function CopilotCustomization() {
   return (
-    <SectionContainer className="py-12">
+    <SectionContainer>
       <ViewContainer className="grid gap-4 md:grid-cols-3">
         {customizations.map((customization) => (
           <Card key={customization.title}>

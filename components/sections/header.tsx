@@ -12,11 +12,11 @@ import {
 } from "@/components/ui";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Menu } from "lucide-react";
-import { links } from "@/content";
+import { headerLinks } from "@/content";
 
-export default function Header() {
+function Header() {
   return (
-    <header className="py-4">
+    <header className="py-6">
       <ViewContainer className="flex flex-wrap justify-between">
         <div className="flex items-center gap-4">
           <Link className="flex items-center gap-2" href="#">
@@ -27,19 +27,17 @@ export default function Header() {
               width="100"
               height="100"
             />
-            <span className="text-xl font-bold text-gray-700 dark:text-gray-300">
-              Visual Studio Code
-            </span>
+            <span className="text-xl font-bold">Visual Studio Code</span>
           </Link>
           <nav className="hidden lg:block">
             <ul className="flex gap-4">
-              {links.map((link, index) => (
+              {headerLinks.map((link, index) => (
                 <li key={index}>
                   <a
-                    className="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+                    className="text-muted-foreground hover:text-foreground"
                     href={link.href}
                   >
-                    {link.name}
+                    {link.title}
                   </a>
                 </li>
               ))}
@@ -67,9 +65,9 @@ export default function Header() {
               <div className="flex min-h-screen flex-col justify-center gap-6 pl-8">
                 <nav className="">
                   <ul className="space-y-6">
-                    {links.map((link, index) => (
+                    {headerLinks.map((link, index) => (
                       <li key={index}>
-                        <a href={link.href}>{link.name}</a>
+                        <a href={link.href}>{link.title}</a>
                       </li>
                     ))}
                   </ul>
@@ -88,3 +86,5 @@ export default function Header() {
     </header>
   );
 }
+
+export { Header };

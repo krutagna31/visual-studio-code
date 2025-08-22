@@ -1,11 +1,11 @@
 import type { Link } from "@/types";
 
-export const links: Link[] = [
-  { name: "Docs", href: "#" },
-  { name: "Updates", href: "#" },
-  { name: "Blog", href: "#" },
-  { name: "API", href: "#" },
-  { name: "Extensions", href: "#" },
-  { name: "FAQ", href: "#" },
-  { name: "GitHub Copilot", href: "#" },
+export const headerLinks: Link[] = [
+  { title: "Docs", href: "#" },
+  { title: "Updates", href: "#" },
+  { title: "Blog", href: "#" },
+  { title: "API", href: "#" },
+  { title: "Extensions", href: "#" },
+  { title: "FAQ", href: "#" },
+  { title: "GitHub Copilot", href: "#" },
 ];
