@@ -5,6 +5,7 @@ export * from "./code-anywhere";
 export * from "./code-with-features";
 export * from "./code-with-extensions";
 export * from "./copilot-customization";
+export * from "./footer";
 export * from "./fully-customizable";
 export * from "./header";
 export * from "./hero";
