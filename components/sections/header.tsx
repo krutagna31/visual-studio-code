@@ -21,13 +21,12 @@ function Header() {
         <div className="flex items-center gap-4">
           <Link className="flex items-center gap-2" href="#">
             <Image
-              className="size-7"
               src="/images/header/vscode.svg"
               alt="Visual Studio Code"
-              width="100"
-              height="100"
+              width="32"
+              height="32"
             />
-            <span className="text-xl font-bold">Visual Studio Code</span>
+            <span className="text-sm lg:text-xl font-bold">Visual Studio Code</span>
           </Link>
           <nav className="hidden lg:block">
             <ul className="flex gap-4">
@@ -44,16 +43,16 @@ function Header() {
             </ul>
           </nav>
         </div>
-        <div className="hidden gap-2 lg:flex">
+        <div className="flex gap-4 items-center">
           <ModeToggle />
-          <Button className="cursor-pointer bg-sky-500 text-white hover:bg-sky-600 active:bg-sky-700">
+          <Button className="hidden cursor-pointer bg-sky-500 text-white hover:bg-sky-600 active:bg-sky-700 lg:block">
             Download
           </Button>
-        </div>
-        <div className="lg:hidden">
           <Sheet>
-            <SheetTrigger>
-              <Menu />
+            <SheetTrigger asChild>
+              <Button className="lg:hidden" variant="outline" size="icon">
+                <Menu />
+              </Button>
             </SheetTrigger>
             <SheetContent>
               <SheetHeader>
@@ -73,7 +72,6 @@ function Header() {
                   </ul>
                 </nav>
                 <div className="flex gap-2">
-                  <ModeToggle />
                   <Button className="cursor-pointer bg-sky-500 text-white hover:bg-sky-600 active:bg-sky-700">
                     Download
                   </Button>
