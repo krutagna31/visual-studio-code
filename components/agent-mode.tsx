@@ -1,9 +1,9 @@
-import { SectionGrid } from "@/components/sections/shared";
+import { GridContainer } from "@/components/layouts";
 import { CustomLink, ThemeImage } from "@/components/ui";
 
 function AgentMode() {
   return (
-    <SectionGrid>
+    <GridContainer>
       <div className="space-y-4 md:place-self-center">
         <h2 className="text-2xl font-bold">Agent Mode</h2>
         <p className="text-muted-foreground">
@@ -13,9 +13,7 @@ function AgentMode() {
           Further refine agent mode to fit your team&apos;s workflows with VS
           Code extensions and Model Context Protocol (MCP) servers.
         </p>
-        <CustomLink href="#">
-          Build with agent mode
-        </CustomLink>
+        <CustomLink href="#">Build with agent mode</CustomLink>
       </div>
       <ThemeImage
         src={{
@@ -26,7 +24,7 @@ function AgentMode() {
         width="1440"
         height="1080"
       />
-    </SectionGrid>
+    </GridContainer>
   );
 }
 

@@ -1,7 +1,7 @@
 import { ViewContainer } from "@/components/layouts";
-import { footerLinks } from "@/content";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import { footerLinks } from "@/content";
 
 function Footer() {
   return (

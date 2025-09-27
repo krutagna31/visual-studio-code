@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { SectionContainer, ViewContainer } from "@/components/layouts";
 import {
   Card,
@@ -7,6 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui";
+import Image from "next/image";
 import { features } from "@/content";
 
 function CodeWithFeatures() {

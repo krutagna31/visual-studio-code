@@ -1,9 +1,9 @@
-import { SectionGrid } from "@/components/sections/shared";
+import { GridContainer } from "@/components/layouts";
 import { CustomLink, ThemeImage } from "@/components/ui";
 
 function CodeAnywhere() {
   return (
-    <SectionGrid>
+    <GridContainer>
       <div className="space-y-4 md:place-self-center">
         <h2 className="text-2xl font-bold">Code anywhere</h2>
         <p className="text-muted-foreground">
@@ -32,7 +32,7 @@ function CodeAnywhere() {
         width="1440"
         height="1080"
       />
-    </SectionGrid>
+    </GridContainer>
   );
 }
 

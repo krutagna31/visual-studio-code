@@ -1,5 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
 import { ViewContainer } from "@/components/layouts";
 import {
   Button,
@@ -10,6 +8,8 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui";
+import Image from "next/image";
+import Link from "next/link";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Menu } from "lucide-react";
 import { headerLinks } from "@/content";
